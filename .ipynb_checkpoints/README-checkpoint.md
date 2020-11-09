@@ -1,4 +1,10 @@
-# AfSIS Soil Chemistry Data - EDA
+# AfSIS Soil Chemistry Data - EDA + modelling
+
+The goal of this model is to find a correlation between the soil elemental analysis and its fertility.
+We tried to correlate measurements taken using "dry chemistry", i.e. XRF and FTIR spectroscopy.
+Those are much quicker and cheper than chromatography and ideally this alghorithm would allow a quick screening to assess the soil quality.
+
+
 ---
 ![tested_samples](/img/folium.png)
 
@@ -11,9 +17,9 @@ Below is a quick overview of the contents:
 
 * The two exported csv files for ML
 
-The EDA the code merges all data into a two CSV files. 
+The EDA the code merges all data into a three CSV files. 
 Those csv files contain results for the samples that got a complete measurements set.
-One for FTIR and the other for elemental analysis of soil samples
+Two for FTIR and one for elemental analysis of soil samples
 If you use it for machine learning please bear in mind:
 
 * FTIR data should be taken away in a dataset that correlates composition to soil quality. Each spectrogram consists of thousands of columns, and these spectograms constitute the majority of the data volume. Merging all of that data into a CSV would result in an extremely unwieldy spreadsheet, and also sacrifice numerical accuracy when converting binary floating-point representations to textual format, whereas we prefer to present the raw data as it was originally recorded. This data should be targeted for machine learning and not human inspection.
