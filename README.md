@@ -2,7 +2,7 @@
 
 The goal of this model is to find a correlation between the soil elemental analysis and its fertility.
 We tried to correlate measurements taken using "dry chemistry", i.e. XRF and FTIR spectroscopy.
-Those are much quicker and cheper than chromatography and ideally this alghorithm would allow a quick screening to assess the soil quality.
+Those are much quicker and cheaper than chromatography and ideally this alghorithm would allow a quick screening to assess the soil quality.
 
 
 ---
