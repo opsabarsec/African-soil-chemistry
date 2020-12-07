@@ -1,4 +1,4 @@
-# AfSIS Soil Chemistry Data - EDA + modelling
+# AfSIS Soil Chemistry Data -from AWS S3 bucket 
 
 The goal of this model is to find a correlation between the soil elemental analysis and its fertility.
 We tried to correlate measurements taken using "dry chemistry", i.e. XRF and FTIR spectroscopy.
@@ -20,19 +20,27 @@ Below is a quick overview of the contents:
 The EDA the code merges all data into a three CSV files. 
 Those csv files contain results for the samples that got a complete measurements set.
 Two for FTIR and one for elemental analysis of soil samples
-If you use it for machine learning please bear in mind:
-
-* FTIR data should be taken away in a dataset that correlates composition to soil quality. Each spectrogram consists of thousands of columns, and these spectograms constitute the majority of the data volume. Merging all of that data into a CSV would result in an extremely unwieldy spreadsheet, and also sacrifice numerical accuracy when converting binary floating-point representations to textual format, whereas we prefer to present the raw data as it was originally recorded. This data should be targeted for machine learning and not human inspection.
 
 
-# Using the Original Data from AWS S3 bucket
+# Data EDA + modelling
 
-See this [Jupyter notebook](https://github.com/qedsoftware/afsis-soil-chem-tutorial/blob/master/afsis-soil-chem-tutorial.ipynb) for a very simple example of how to load the data and train a regressor to predict certain nutrients from dry chemistry.
+Fertility has been correlated to soil Chemistry using Logistic Regression
 
-The AfSIS dataset will give you a springboard to start with. In practice, you may wish to compute more sophisticated models that involve more feature engineering, include business-specific penalty functions, and also incorporate local covariates such as crop yields, weather patterns, farming practices, and dry and wet chemical measurements of soil samples localized to your region of interest.
+FTIR data have been modeled and a possible correlation of infrared peak intensity to soil compositional parameters has been modeled using
+
+- Partial Least Squares (PLS) regression
+- Random Forest regression
+- A custom-made convolutional neural network
+
+Details (in French) on the report available in the folder
+documents/P7_report.pdf
+
+![model](/img/CNN.png)
 
 
-# Historical Context
+
+
+# Historical context
 
 Soil is vital to life on Earth. It is our natural reservoir for storing and moving all the nutrients, liquids, and gases needed for life, including 90% of all water for food production, and 2300 Gigatons of organic carbon. And yet, while humankind has depended on soil since the beginning of civilization, we still know extremely little about it. In most parts of the world, both the public and private agricultural sectors remain extremely uninformed about the nutrient content and overall health of the soil beneath our feet.
 
