@@ -8,18 +8,7 @@ Those are much quicker and cheaper than chromatography and ideally this alghorit
 ---
 ![tested_samples](/img/folium.png)
 
-The dataset hosted at `arn:aws:s3:::afsis` contains field and laboratory measurements of soil samples collected through the Africa Soil Information Service (AfSIS) project, which spanned from 2009 through 2018. Georeferenced soil samples were collected from many countries throughout Sub-Saharan Africa, and their nutrient content was analyzed using *both* wet chemistry (e.g. Mehlich-3) and dry chemistry (e.g., infrared spectroscopy, x-ray fluorescence). The two types of data can be paired to form a training dataset for machine learning, such that certain nutrients measured by wet chemical analyses can be well predicted from dry chemistry.
-
-
-Below is a quick overview of the contents:
-
-* The CSV in the `Georeferences` table describes the places and times where soil samples were taken by field teams.
-
-* The two exported csv files for ML
-
-The EDA the code merges all data into a three CSV files. 
-Those csv files contain results for the samples that got a complete measurements set.
-Two for FTIR and one for elemental analysis of soil samples
+The dataset hosted at `arn:aws:s3:::afsis` contains field and laboratory measurements of soil samples collected through the Africa Soil Information Service (AfSIS) project, which spanned from 2009 through 2018. Georeferenced soil samples were collected from many countries throughout Sub-Saharan Africa, and their nutrient content was analyzed using *both* wet chemistry (e.g. Mehlich-3) and dry chemistry (e.g., infrared spectroscopy, x-ray fluorescence).
 
 
 # Data EDA + modelling
