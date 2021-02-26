@@ -31,7 +31,7 @@ FTIR data have been modeled and a possible correlation of infrared peak intensit
 - Random Forest regression
 - A custom-made convolutional neural network
 
-Details (in French) on the [report.](https://github.com/opsabarsec/African-soil-chemistry-fertility-correlation/blob/master/documents/P7_report.pdf) 
+Details can be found on my blog page [report.](https://m-berta.medium.com/machine-learning-and-chemistry-an-example-from-soil-data-253fd1552af) 
 
 ![model](/img/CNN.png)
 
