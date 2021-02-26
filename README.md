@@ -14,7 +14,7 @@ This alghorithm would ideally allow a quick and cheap screening to assess the so
 ![tested_samples](/img/folium.png)
 
 ## 2. The data
-The dataset hosted at `arn:aws:s3:::afsis` contains field and laboratory measurements of soil samples collected through the Africa Soil Information Service (AfSIS) project, which spanned from 2009 through 2018. Georeferenced soil samples were collected from many countries throughout Sub-Saharan Africa, and their nutrient content was analyzed using *both* wet chemistry (e.g. Mehlich-3) and dry chemistry (e.g., infrared spectroscopy, x-ray fluorescence).
+The dataset hosted at `arn:aws:s3:::afsis` contains field and laboratory measurements of soil samples collected through the Africa Soil Information Service ([AfSIS](https://www.isric.org/projects/africa-soil-information-service-afsis)) project, which spanned from 2009 through 2018. Georeferenced soil samples were collected from many countries throughout Sub-Saharan Africa, and their nutrient content was analyzed using *both* wet chemistry (e.g. Mehlich-3) and dry chemistry (e.g., infrared spectroscopy, x-ray fluorescence).
 [Cleaning and exploratory analysis code](https://github.com/opsabarsec/African-soil-chemistry-fertility-correlation/blob/master/afsis-soil-chem-EDA.ipynb)
 
 # 3. The model
