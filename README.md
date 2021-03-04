@@ -37,11 +37,15 @@ Details can be found on my blog [post.](https://m-berta.medium.com/machine-learn
 
 ## 4. Conclusions
 
-- Logistic Regression provided good correlation between "cheap" measurements and soil fertility
+- Logistic Regression provided good correlation between "cheap/fast" measurements and soil fertility.
 
 - Modelling the correlation between infrared spectra peaks intensity and chemical composition gave poor results. This is likely due to physical phenomena such nonlinear responses rather than any model artifact.
 
-![jupyter](jupyter.png)[Model's code can be found in the following Jupyter notebook](https://github.com/opsabarsec/African-soil-chemistry-fertility-correlation/blob/master/afsis-soil-chem-MODEL.ipynb)
+Two Jupyter notebooks contain the code for EDA and tested models: 
+
+![jupyter](jupyter.png)[EDA](https://github.com/opsabarsec/African-soil-chemistry-fertility-correlation/blob/master/afsis-soil-chem-EDA.ipynb)
+
+![jupyter](jupyter.png)[Tested models](https://github.com/opsabarsec/African-soil-chemistry-fertility-correlation/blob/master/afsis-soil-chem-MODEL.ipynb)
 
 
 
